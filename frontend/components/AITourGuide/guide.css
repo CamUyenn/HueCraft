@@ -1,0 +1,253 @@
+.tour-guide{
+    position:fixed;
+    right:40px;
+    bottom:30px;
+    z-index:9999;
+}
+
+
+.guide-avatar{
+
+    width:150px;
+    cursor:pointer;
+
+    animation:float 3s ease-in-out infinite;
+
+    filter:
+    drop-shadow(0 15px 20px rgba(255,170,0,.35));
+
+}
+
+
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+.guide-box{
+
+    position:absolute;
+
+    right:0;
+    bottom:170px;
+
+    width:280px;
+
+    background:
+    rgba(20,15,10,.95);
+
+    border:
+
+    1px solid rgba(255,180,0,.4);
+
+
+    border-radius:24px;
+
+    padding:22px;
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.5);
+
+}
+
+
+
+.guide-box h3{
+
+    color:#ffb000;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.guide-box button{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    border:none;
+
+    background:#ffad00;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+.chat-box{
+
+position:absolute;
+
+right:0;
+
+bottom:170px;
+
+width:330px;
+
+height:420px;
+
+
+background:#17120d;
+
+
+border:1px solid rgba(255,180,0,.4);
+
+
+border-radius:24px;
+
+
+overflow:hidden;
+
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.6);
+
+}
+
+
+
+.chat-header{
+
+padding:18px;
+
+font-weight:bold;
+
+color:#ffb000;
+
+border-bottom:
+1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+.chat-content{
+
+height:300px;
+
+padding:15px;
+
+overflow-y:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+
+
+.chat-ai,
+.chat-user{
+
+padding:12px 15px;
+
+border-radius:18px;
+
+max-width:80%;
+
+font-size:14px;
+
+}
+
+
+
+.chat-ai{
+
+background:#2a231c;
+
+color:white;
+
+align-self:flex-start;
+
+}
+
+
+
+.chat-user{
+
+background:#ffad00;
+
+color:white;
+
+align-self:flex-end;
+
+}
+
+
+
+.chat-input{
+
+display:flex;
+
+padding:12px;
+
+gap:8px;
+
+}
+
+
+
+.chat-input input{
+
+flex:1;
+
+background:#241d17;
+
+border:none;
+
+outline:none;
+
+padding:12px;
+
+border-radius:12px;
+
+color:white;
+
+}
+
+
+
+.chat-input button{
+
+width:45px;
+
+border:none;
+
+border-radius:12px;
+
+background:#ffad00;
+
+color:white;
+
+cursor:pointer;
+
+}
